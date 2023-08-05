@@ -3,9 +3,10 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+
 }
 body{
-    font-family: "Poppins",sans-serif;
     background-color: #fff;
 }
 .container{
@@ -16,10 +17,24 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
 }
 a{
     text-decoration: none;
     color: #000;
     text-transform: capitalize;
+}
+ul{
+    list-style: none;
+}
+button{
+    border-radius: 5px;
+    padding: 17px 30px;
+    background-color: #27ae60;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+button i{
+    margin-right: 5px;
 }

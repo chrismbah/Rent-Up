@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { list } from "../../data/Data";
+import "./Recent.css"
 export default function RecentCard() {
   return (
     <>
       <div className="content grid3 mtop">
         {list.map((item, index) => {
           const { cover, name, location, category, price, type } = item;
+          const [colorHeart,setColor]=useState("#bec7d8")
+          function toggleColor(){
+            colorHeart==="#bec7d8"?setColor("#27ae60"):setColor("#bec7d8")
+            // if (colorHeart==="#bec7d8"){
+            //     setColor("#27ae60")
+            // }
+            // else{
+            //     setColor("bec7d8")
+            // }
+          }
           return (
             <div className="box shadow" key={index}>
               <div className="img">
@@ -22,10 +33,17 @@ export default function RecentCard() {
                   >
                     {category}
                   </span>
-                  <i className="fa fa-heart"></i>
+                  <i className="fa fa-heart"  style={{color:colorHeart}} onClick={toggleColor}></i>
                 </div>
                 <h4>{name}</h4>
-                <p><i className="fa fa-location-dot"></i>{location}</p>
+                <p><i className="fa fa-location-dot" ></i>{location}</p>
+              </div>
+              <div className="button flex">
+                <div>
+                    <button className="btn2">{price}</button>
+                    <label htmlFor="">/sqft</label>
+                </div>
+                <span>{type}</span>
               </div>
             </div>
           );

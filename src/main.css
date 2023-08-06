@@ -52,3 +52,8 @@ button i{
 .heading p{
     color: #72809d;
 }
+textarea,input{
+    border: none;
+    outline: none;
+    background-color: none;
+}

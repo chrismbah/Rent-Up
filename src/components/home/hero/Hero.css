@@ -12,6 +12,14 @@
 .hero .container{
     padding-top: 15%;
 }
+.hero h1{
+    color: #fff;
+    font-size: 50px;
+}
+.hero p{
+    color: #fff;
+    opacity: .8;
+}
 form{
     background-color: #fff;
     border-radius: 5px;
@@ -42,4 +50,19 @@ form .box:nth-child(1){
 }
 form h4{
     font-weight: 500;
+}
+@media screen and (max-width:800px) { /*768px*/
+    .hero .container{
+        padding-top: 30%;
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    form .box{
+        border-left: none;
+    }
+    form input{
+        width: 100%;
+    }
 }

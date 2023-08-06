@@ -1,10 +1,10 @@
-import React from "react";
-import "./header.css"
+import React, { useState } from "react";
+import "./header.css";
 import { Link } from "react-router-dom";
 import { nav } from "../../data/Data";
 
-
 export default function Header() {
+  const [navlist, setnavlist] = useState(false);
   return (
     <>
       <header>
@@ -13,12 +13,12 @@ export default function Header() {
             <img src="./images/logo.png" alt="logo" />
           </div>
           <div className="nav">
-            <ul className="flex">
-                {nav.map((list,index)=>(
-                  <li key={index}>
-                    <Link to={list.path}>{list.text}</Link>
-                  </li>
-                ))}
+            <ul className={navlist ? "small" : "flex"}>
+              {nav.map((list, index) => (
+                <li key={index}>
+                  <Link to={list.path}>{list.text}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="button flex">
@@ -31,8 +31,12 @@ export default function Header() {
             </button>
           </div>
           <div className="toggle">
-            <button>
-              <i className="fa fa-bars"></i>
+            <button onClick={() => setnavlist(!navlist)}>
+              {navlist ? (
+                <i className="fa fa-times"></i>
+              ) : (
+                <i className="fa fa-bars"></i>
+              )}
             </button>
           </div>
         </div>

@@ -28,7 +28,7 @@ ul{
 }
 button{
     border-radius: 5px;
-    padding: 17px 30px;
+    padding: 12px 28px;
     background-color: #27ae60;
     border: none;
     color: #fff;
@@ -37,4 +37,18 @@ button{
 }
 button i{
     margin-right: 5px;
+}
+.heading{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.heading h1{
+    color: #2f3954;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+.heading p{
+    color: #72809d;
 }

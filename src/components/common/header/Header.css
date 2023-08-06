@@ -3,12 +3,12 @@
 }
 header{
     background-color: #fff;
-    height: 13vh;  /* height:10vh */
+    height: 10vh;  /* height:10vh */
     box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 999;
-    padding: 15px 0;
 }
 header img{ 
     width: 170px;
@@ -36,4 +36,35 @@ header h4{
 }
 header .toggle{
     display: none;
+}
+@media screen and (max-width:768px) {
+    header{
+        padding: 0;
+    }
+    header img{
+        margin-top: 30px;
+    }
+    header .button{
+        display: none;
+    }
+    header .nav .flex{
+        display: none;
+    }
+    header .toggle{
+        display: block;
+        margin-top: 30px;
+    }
+    header .small{
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary);
+        padding: 20px;
+    }
+    header li a{
+        display: inline-block;
+        margin-bottom: 20px;
+        color: #fff;
+    }
 }

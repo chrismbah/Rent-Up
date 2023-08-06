@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../common/header/Header";
+import Home from "../home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function Pages() {
@@ -8,9 +9,7 @@ export default function Pages() {
       <Router>
         <Header />
         <Routes>
-          {/* <Route path="/about">
-            <About />
-          </Route> */}
+          <Route path="/" element={<Home/>} />
         </Routes>
       </Router>
     </>

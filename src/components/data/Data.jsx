@@ -129,7 +129,7 @@ export const awards = [
     name: "IITCA Green Award",
   },
 ]
-export const location = [
+export const locations = [
   {
     id: 1,
     name: "New Orleans, Louisiana",

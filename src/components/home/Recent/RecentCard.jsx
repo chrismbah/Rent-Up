@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import { list } from "../../data/Data";
 import "./Recent.css";
-export default function RecentCard() {
+export default function RecentCard({ setListNum, listNum }) {
   return (
     <>
       <div className="content grid3 mtop">
         {list.map((item, index) => {
           const { cover, name, location, category, price, type } = item;
           const [colorHeart, setColor] = useState("#bec7d8");
+          function toggleBtn() {
+            if (colorHeart === "#bec7d8") {
+              setColor("#27ae60");
+              setListNum(listNum + 1);
+            } else {
+              setColor("#bec7d8");
+              setListNum(listNum - 1);
+            }
+          }
           return (
             <div className="box shadow" key={index}>
               <div className="img">
@@ -27,10 +36,11 @@ export default function RecentCard() {
                   <i
                     className="fa fa-heart"
                     style={{ color: colorHeart }}
-                    onClick={() =>
-                      colorHeart === "#bec7d8"
-                        ? setColor("#27ae60")
-                        : setColor("#bec7d8")
+                    onClick={
+                      toggleBtn
+                      // colorHeart === "#bec7d8"
+                      //   ? setColor("#27ae60")
+                      //   : setColor("#bec7d8")
                     }
                   ></i>
                 </div>

@@ -1,6 +1,7 @@
 .recent .text{
     padding: 30px;
 }
+
 .recent .category span{
     padding: 4px 15px;
     border-radius: 2px;
@@ -12,6 +13,7 @@
     font-size: 20px;
     color: #bec7d8;
     cursor: pointer;
+    transition: .15 s ease-out;
 }
 .recent p{
     color: #72809d;
@@ -19,4 +21,7 @@
 .recent .button{
     border-top: 1px solid #efe8f3;
     padding: 10px 30px;
+}
+.recent .text .fa-location-dot{
+    margin-right:5px ;
 }

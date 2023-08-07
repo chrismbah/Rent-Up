@@ -110,7 +110,7 @@ export const list = [
 export const awards = [
   {
     icon: <i class='fa-solid fa-trophy'></i>,
-    num: "32 M	",
+    num: "32 M",
     name: "Blue Burmin Award",
   },
   {

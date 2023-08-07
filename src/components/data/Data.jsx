@@ -179,7 +179,7 @@ export const locations = [
     cover: "./images/location/city-6.png",
   },
 ]
-export const team = [
+export const teams= [
   {
     list: "50",
     cover: "../images/customer/team-1.jpg",

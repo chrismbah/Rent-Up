@@ -1,7 +1,10 @@
 import React from "react";
 import Header from "../common/header/Header";
 import Home from "../home/Home";
+import About from "../about/About";
+import Services from "../services/Services";
 import Footer from "../common/footer/Footer";
+import Blog from "../blog/Blog";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { createContext } from "react";
@@ -18,7 +21,20 @@ export default function Pages() {
           <Routes>
             <Route
               path="/"
-              element={<Home setlistNum={setListNum} listNum={listNum} />}
+              element={<Home />}
+            />
+                <Route
+              path="/about"
+              element={<About />}
+            />
+                <Route
+              path="/services"
+              element={<Services />}
+            />
+               
+                <Route
+              path="/blog"
+              element={<Blog />}
             />
           </Routes>
           <Footer />

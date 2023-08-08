@@ -32,14 +32,14 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          {footer.map((val) => {
+          {footer.map((val,index) => {
             return (
-              <div className="box">
+              <div className="box" key={index}>
                 <h3>{val.title}</h3>
                 <ul>
-                  {val.text.map((item) => {
+                  {val.text.map((item,i) => {
                     const { list } = item;
-                    return <li>{list}</li>;
+                    return <li key={i}>{list}</li>;
                   })}
                 </ul>
               </div>

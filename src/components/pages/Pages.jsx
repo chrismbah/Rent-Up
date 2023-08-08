@@ -6,9 +6,11 @@ import Services from "../services/Services";
 import Footer from "../common/footer/Footer";
 import Blog from "../blog/Blog";
 import Pricing from "../pricing/Pricing";
+import Contact1 from "../contact/Contact1";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { createContext } from "react";
+import Contact from "../contact/Contact1";
 export const AppContext = createContext();
 
 export default function Pages() {
@@ -40,6 +42,10 @@ export default function Pages() {
                 <Route
               path="/pricing"
               element={<Pricing />}
+            />
+                  <Route
+              path="/contact"
+              element={<Contact1 />}
             />
           </Routes>
           <Footer />

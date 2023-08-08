@@ -5,6 +5,7 @@ import About from "../about/About";
 import Services from "../services/Services";
 import Footer from "../common/footer/Footer";
 import Blog from "../blog/Blog";
+import Pricing from "../pricing/Pricing";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { createContext } from "react";
@@ -35,6 +36,10 @@ export default function Pages() {
                 <Route
               path="/blog"
               element={<Blog />}
+            />
+                <Route
+              path="/pricing"
+              element={<Pricing />}
             />
           </Routes>
           <Footer />

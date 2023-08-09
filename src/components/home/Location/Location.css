@@ -4,7 +4,7 @@
 }
 .location img{
     border-radius: 5px;
-    /* height: 280px; */
+    height: 280px;
 }
 .location .overlay{
     position: absolute;
@@ -13,27 +13,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 250px;
+    flex-direction: column;  
+    height: 280px;
     width: 100%;
     color: #fff;
-    z-index: 999;
+    z-index: 9;
+    text-align: center;
+    padding-left: 14px;
 }
-.location .overlay::after{
+.location .overlay label{
+    text-align: center;
+
+}
+.location .overlay::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-
-    width: 90%;
-    /* width: 340px; */
-
-    height: 75%;
-    /* height: 210px; */
+    width:100%;
+    height: 100%;
     background: rgb(15 28 47 / 30%);
     z-index: -1;
-    margin: 15px;
-    /* margin: 20px ; */
     border-radius: 5px;
 }
 .location h5{
@@ -45,9 +45,4 @@
     margin-right: 20px;
     opacity: .8;
 }
-@media screen and (max-width:800px) {
-      .location .overlay::after{
-        width: 280px;
-        height: 170px;
-      }
-}
+

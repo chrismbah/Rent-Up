@@ -13,7 +13,7 @@
 }
 .awards .heading h1{
     color: #fff;
-    font-size: 30px;
+    font-size: 1.92rem;
     font-weight: 400;
 }
 .awards .icon{
@@ -28,8 +28,16 @@
     color: #fff;
 }
 .awards h1{
-    font-size: 50px;
+    font-size: 3rem;
 }
 .awards p{
     color: grey;
+}
+@media screen and (max-width:920px) {
+    .awards .heading h1{
+        font-size: 1.6rem;
+    }
+    .awards h1{
+        font-size:2.5rem ;
+    }
 }

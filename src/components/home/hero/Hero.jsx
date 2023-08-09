@@ -24,7 +24,7 @@ export default function Hero() {
               <span>Price Range</span>
               <input type="text" placeholder="Price Range" />
             </div>
-            <div className="box">
+            <div className="box box-1">
               <h4>Advanced Filter</h4>
             </div>
             <button className="btn">

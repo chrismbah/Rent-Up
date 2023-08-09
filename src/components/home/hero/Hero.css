@@ -6,11 +6,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    /* height: 90vh; */
     width: 100%;
 }
 .hero .container{
-    padding-top: 15%;
+    /* padding-top: 15%; */
+    padding-top: 10% ;
+    padding-bottom: 14%;
 }
 .hero h1{
     color: #fff;
@@ -51,9 +53,24 @@ form .box:nth-child(1){
 form h4{
     font-weight: 500;
 }
-@media screen and (max-width:800px) { /*768px*/
-    .hero .container{
-        padding-top: 30%;
+@media screen and (max-width:950px) {
+    input::placeholder{
+        font-size: 14px;
+    }
+    form h4{
+        font-size:.9rem ;
+    }
+    form .btn{
+        padding: 10px 20px;
+    }
+   
+}
+@media screen and (max-width:800px) {
+    .hero .heading h1{
+        font-size: 2.5rem;
+    }
+    .hero .heading p{
+        font-size: .9rem;
     }
     form{
         display: flex;
@@ -64,5 +81,10 @@ form h4{
     }
     form input{
         width: 100%;
+    }
+}
+@media screen and (max-width:673px) { 
+    .box-1{
+       width: 60%;
     }
 }

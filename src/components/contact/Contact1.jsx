@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <>
       <section className="contact mb">
-        <Back name="" title="" cover={image} />
+        <Back name="Contact Us" title="Get Help And Friendly Support" cover={image} />
         <div className="container">
           <form action="" className="shadow">
             <h4>Fillup The Form</h4>

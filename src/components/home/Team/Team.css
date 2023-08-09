@@ -83,6 +83,11 @@
         grid-gap: 30px;
     }
 }
+@media screen and (max-width:780px){
+    .team button{
+        padding: 7px 18px;
+    }
+}
 @media screen and (max-width:340px){
     .team button{
         padding: 7px 15px;

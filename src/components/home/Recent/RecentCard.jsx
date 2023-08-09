@@ -51,9 +51,9 @@ export default function RecentCard({ setListNum, listNum }) {
                 </p>
               </div>
               <div className="button flex">
-                <div>
+                <div className="price-no">
                   <button className="btn2">{price}</button>
-                  <label htmlFor="">/sqft</label>
+                  <label htmlFor=""> /sqft</label>
                 </div>
                 <span>{type}</span>
               </div>

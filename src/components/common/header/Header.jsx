@@ -8,6 +8,10 @@ import { AppContext } from "../../pages/Pages";
 export default function Header() {
   const [navlist, setnavlist] = useState(false);
   const { listNum } = useContext(AppContext);
+  const [selectedLink, setSelectedLink] = useState(null);
+  function handleLinkClick(link) {
+    setSelectedLink(link);
+  }
   return (
     <>
       <header>
@@ -17,11 +21,16 @@ export default function Header() {
           </div>
           <div className="nav">
             <ul className={navlist ? "small" : "flex"}>
-              {nav.map((list, index) => (
-                <li key={index}>
-                  <Link to={list.path}>{list.text}</Link>
-                </li>
-              ))}
+              {nav.map((list, index) => {
+                const { text, path } = list;
+                return (
+                  <li key={index}>
+                    <Link to={path} className={selectedLink===text?"selected":""} onClick={() => handleLinkClick({ text })}>
+                      {text}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="button flex">

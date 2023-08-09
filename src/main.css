@@ -88,8 +88,7 @@ h4{
 }
 .grid3{
     display: grid;
-    /* grid-template-columns: repeat(3,1fr); */
-    grid-template-columns: repeat(auto-fit,minmax(320px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
     grid-gap: 30px;
 }
 img{
@@ -151,7 +150,6 @@ img{
 .mb{
     margin-bottom: 80px;
 }
-@media screen and (max-width:950px) {
-    /* .heading h1{
-    }    */
+@media screen and (max-width:360px) {
+ 
 }

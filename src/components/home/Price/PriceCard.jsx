@@ -16,10 +16,10 @@ export default function PriceCard() {
             </h1>
             <p>{item.ptext}</p>
             <ul>
-              {item.list.map((val) => {
+              {item.list.map((val,index) => {
                 const { icon, text, change } = val;
                 return (
-                  <li>
+                  <li key={index}>
                     <label
                       style={{
                         background:

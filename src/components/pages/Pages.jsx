@@ -10,7 +10,6 @@ import Contact1 from "../contact/Contact1";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { createContext } from "react";
-import Contact from "../contact/Contact1";
 export const AppContext = createContext();
 
 export default function Pages() {

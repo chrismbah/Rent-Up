@@ -87,7 +87,7 @@ h4{
 }
 .grid3{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(270px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(290px,auto));
     grid-gap: 30px;
 }
 img{

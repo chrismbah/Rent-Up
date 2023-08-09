@@ -47,7 +47,8 @@ button i{
     color: #2f3954;
     font-weight: 600;
     text-transform: capitalize;
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: 2.1rem;
 }
 .heading p{
     color: #72809d;
@@ -149,4 +150,8 @@ img{
 }
 .mb{
     margin-bottom: 80px;
+}
+@media screen and (max-width:950px) {
+    .heading h1{
+    }   
 }

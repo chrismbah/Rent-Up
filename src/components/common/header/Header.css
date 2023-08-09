@@ -37,12 +37,38 @@ header h4{
 header .toggle{
     display: none;
 }
+@media screen and (max-width:1170px) {
+    header .container{
+        max-width: 90%;
+    }
+    
+}
+@media screen and (max-width:1060px) {
+    header a{
+        margin-left: 21px;
+        font-weight: 500;
+        font-size: .9rem;
+
+    }
+    header h4{
+        margin-right: 10px;
+    }
+   .btn1{
+        padding: 8px 15px;
+
+    }
+    .button h4{
+        display: none;
+    }
+}
 @media screen and (max-width:800px) {
     header{
         padding: 0;
     }
     header img{
-        margin-top: 30px;
+        margin-top: 20px;
+        width: 150px;
+
     }
     header .button{
         display: none;
@@ -52,7 +78,7 @@ header .toggle{
     }
     header .toggle{
         display: block;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     header .small{
         position: absolute;

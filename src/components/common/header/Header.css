@@ -3,7 +3,7 @@
 }
 header{
     background-color: #fff;
-    height: 10vh;  /* height:10vh */
+    /* height: 10vh; */
     box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
     padding: 15px 0;
     position: sticky;
@@ -78,7 +78,7 @@ header .toggle{
     }
     header .toggle{
         display: block;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     header .small{
         position: absolute;

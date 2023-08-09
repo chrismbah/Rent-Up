@@ -73,3 +73,18 @@
     color: white;
     font-size: 20px;
 }
+
+@media screen and (max-width:780px){
+    .team button{
+        padding: 10px 22px;
+    }
+    .grid3{
+        grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width:340px){
+    .team button{
+        padding: 7px 15px;
+    }
+}

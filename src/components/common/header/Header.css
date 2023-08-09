@@ -3,7 +3,6 @@
 }
 header{
     background-color: #fff;
-    /* height: 10vh; */
     box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
     padding: 15px 0;
     position: sticky;
@@ -107,5 +106,14 @@ header .toggle{
         display: inline-block;
         margin-bottom: 20px;
         color: #fff;
+    }
+}
+@media screen and (max-width:320px){
+    header img{ 
+        width: 130px;
+    }
+    .toggle button{
+    padding: 8px 18px;
+
     }
 }

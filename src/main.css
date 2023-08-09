@@ -152,6 +152,6 @@ img{
     margin-bottom: 80px;
 }
 @media screen and (max-width:950px) {
-    .heading h1{
-    }   
+    /* .heading h1{
+    }    */
 }

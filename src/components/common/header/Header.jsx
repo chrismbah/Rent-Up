@@ -7,7 +7,7 @@ import { AppContext } from "../../pages/Pages";
 
 export default function Header() {
   const [navlist, setnavlist] = useState(false);
-  const {listNum}=useContext(AppContext)
+  const { listNum } = useContext(AppContext);
   return (
     <>
       <header>
@@ -17,7 +17,7 @@ export default function Header() {
           </div>
           <div className="nav">
             <ul className={navlist ? "small" : "flex"}>
-              {nav.map((list, index)=> (
+              {nav.map((list, index) => (
                 <li key={index}>
                   <Link to={list.path}>{list.text}</Link>
                 </li>
@@ -26,7 +26,7 @@ export default function Header() {
           </div>
           <div className="button flex">
             <h4>
-              <span>{listNum}</span> My List
+              <span>{listNum}</span> <label>My List</label>
             </h4>
             <button className="btn1">
               <i className="fa fa-sign-out"></i>

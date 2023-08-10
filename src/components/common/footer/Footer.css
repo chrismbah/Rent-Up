@@ -47,8 +47,56 @@ footer ul li{
     color: rgba(225, 225, 225, .5);
     border-top: 1px solid rgba(225, 225, 225, .5);
 }
+@media screen and (max-width:1000px) {
+    footer .container{
+        grid-template-columns: 2fr 2fr;
+        text-align: center;
+        grid-gap: 22px;
+    }
+}
+@media screen and (max-width:850px) {
+    .footerContact{
+        padding: 36px 0;
+    }
+    .footerContact .btn5{
+        padding: 10px 23px;
+        font-size: 15px;
+        border: 3px solid #27ae601f;
+    }
+    .footerContact h1{
+        font-size: 27px;
+    }
+    .footerContact .flex {
+        gap: 10px;
+    }
+}
 @media screen and (max-width:800px) {
     footer .container{
         grid-template-columns: repeat(2,1fr);
     }
+    .logo .flex{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo .flex button{
+        width: 100%;
+    }
+}
+@media screen and (max-width:650px) {
+    .footerContact .flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footerContact .btn5{
+     width: 100%;
+    }
+    .footerContact .text{
+        text-align: center;
+    }
+   
+}
+@media screen and (max-width:650px) {
+    footer .container{
+        grid-template-columns: 1fr;
+    }   
 }

@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import "./Location.css";
 import { locations } from "../../data/Data";
 import Heading from "../../common/Heading";

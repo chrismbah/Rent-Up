@@ -10,12 +10,12 @@ import { useContext } from "react";
 import { AppContext } from "../pages/Pages";
 
 export default function Home() {
-  const { listNum, setListNum } = useContext(AppContext);
+  const { setListNum } = useContext(AppContext);
   return (
     <>
       <Hero />
       <Featured />
-      <Recent setListNum={setListNum} listNum={listNum} />
+      <Recent setListNum={setListNum}/>
       <Awards />
       <Location />
       <Team />

@@ -19,7 +19,7 @@ export default function Pages() {
     <>
       <AppContext.Provider value={{ listNum, setListNum }}>
         <Router>
-          <Header listNum={listNum} />
+          <Header />
           <Routes>
             <Route
               path="/"

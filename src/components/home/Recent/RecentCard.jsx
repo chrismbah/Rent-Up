@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { list } from "../../data/Data";
 import "./Recent.css";
-export default function RecentCard({ setListNum, listNum }) {
+export default function RecentCard({setListNum}) {
   return (
     <>
       <div className="content grid3 mtop">
@@ -11,10 +11,10 @@ export default function RecentCard({ setListNum, listNum }) {
           function toggleBtn() {
             if (colorHeart === "#bec7d8") {
               setColor("#27ae60");
-              setListNum(listNum + 1);
+              setListNum((listNum)=>listNum + 1);
             } else {
               setColor("#bec7d8");
-              setListNum(listNum - 1);
+              setListNum((listNum)=>listNum - 1);
             }
           }
           return (

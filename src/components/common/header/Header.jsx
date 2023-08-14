@@ -9,8 +9,9 @@ export default function Header() {
   const [navlist, setnavlist] = useState(false);
   const { listNum,setListNum } = useContext(AppContext);
   const [selectedLink, setSelectedLink] = useState(null);
+
   function handleLinkClick(link) {
-    setSelectedLink({link});
+    setSelectedLink(link);
     if(selectedLink==="home"||"blog"){
       setListNum(0)
     }
@@ -28,7 +29,7 @@ export default function Header() {
                 const { text, path } = list;
                 return (
                   <li key={index}>
-                    <Link to={path} className={selectedLink===text?"selected":"."} onClick={() => handleLinkClick({ text })}>
+                    <Link to={path} className={selectedLink===text?"selected":""} onClick={() => handleLinkClick( text )}>
                       {text}
                     </Link>
                   </li>

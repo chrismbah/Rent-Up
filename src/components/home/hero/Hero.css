@@ -7,10 +7,11 @@
     background-position: center;
     background-size: cover;
     width: 100%;
+    min-height: 89vh;
 }
 .hero .container{
-    padding-top: 15%;
-    padding-bottom: 11.6%;
+    padding-top: 11%;
+    padding-bottom: 11%;
 }
 .hero h1{
     color: #fff;
@@ -61,7 +62,6 @@ form h4{
     form .btn{
         padding: 10px 20px;
     }
-   
 }
 @media screen and (max-width:800px) {
     .hero .heading h1{

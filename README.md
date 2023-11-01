@@ -1,10 +1,10 @@
 # Real Estate Website
 
-![Website Screenshot]("/public/homepage.png")
+![Home Page]("/public/homepage.png")
 
 ## Description
 
-This is a real estate website that allows users to search for properties, view property details, and connect with real estate agents. It provides a user-friendly platform for both property buyers and sellers to interact and find their ideal real estate deals.
+A Real Estate website that allows users to search for properties, view property details, and connect with real estate agents. It provides a user-friendly platform for both property buyers and sellers to interact and find their ideal real estate deals.
 
 ## Features
 
@@ -17,7 +17,7 @@ This is a real estate website that allows users to search for properties, view p
 
 ## Demo
 
-You can access the live demo at [website-demo-url](https://rent-up22.vercel.app).
+You can access the live demo [here](https://rent-up22.vercel.app).
 
 ## Technologies Used
   - HTML, CSS, JavaScript

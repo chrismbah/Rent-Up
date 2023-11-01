@@ -1,6 +1,6 @@
 # Real Estate Website
 
-![Home Page]("/public/homepage.png")
+![Home Page]("public/homepage.png")
 
 ## Description
 

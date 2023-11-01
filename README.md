@@ -15,11 +15,11 @@ A Real Estate website that allows users to search for properties, view property 
 - **User Authentication:** Implement user accounts for saving favorite properties and managing property listings (for property owners/agents).
 - **Responsive Design:** Ensure that the website is accessible on various devices and screen sizes.
 
-## Demo
-
-You can access the live demo [here](https://rent-up22.vercel.app).
-
 ## Technologies Used
   - HTML, CSS, JavaScript
   - React (or any other frontend framework/library)
+
+## Demo
+
+You can access the live demo [here](https://rent-up22.vercel.app).
 

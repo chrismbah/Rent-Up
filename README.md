@@ -17,7 +17,7 @@ A Real Estate website that allows users to search for properties, view property 
 
 ## Technologies Used
   - HTML, CSS, JavaScript
-  - React (or any other frontend framework/library)
+  - React JS
 
 ## Demo
 
